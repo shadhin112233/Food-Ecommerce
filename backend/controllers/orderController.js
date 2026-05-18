@@ -96,7 +96,7 @@ const placeOrder = async (req, res) => {
         });
 
         const frontend_url =
-            process.env.FRONTEND_URL || "http://localhost:5174";
+            process.env.FRONTEND_URL || "https://food-ecommerce-frontend-ok9d.onrender.com";
 
     
         const session = await stripe.checkout.sessions.create({
